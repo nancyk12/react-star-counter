@@ -1,38 +1,65 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+@import url('https://fonts.googleapis.com/css2?family=Helvetica&display=swap');
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.header {
+    background-color: #D74532;
+    font-family: 'Helvetica', sans-serif, bold;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    margin-bottom: 20px;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .logo {
+    height: 50px;
+    width: 60px;
+    margin-right: 10px;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .subtractButton {
+    margin-right: 20px;
   }
-}
+
+.addButton {
+    margin-left: 20px;
+}  
+  
+  .counter {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  .stars-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: center; 
+    grid-column-gap: 0px;
+    margin-top: 20px;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .star-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: #f2f2f2; 
+    border: 1px solid #F2C94C; 
+    border-radius: 17px; 
+    font-size: 0;
+    margin: 5px 1px;
+   
+  }
+  
+  .star-icon {
+    font-size: 24px;
+    color: #F2C94C; /* Hex code for the star icon color */
+  }
